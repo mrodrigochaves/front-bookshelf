@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Head First Java",
+    "subtitle": "'A Brain-Friendly Guide",
+    "image": "https://m.media-amazon.com/images/I/41X08AfoP5L._SX430_BO1,204,203,200_.jpg",
+    "author": "Kathy Sierra, Bert Bates, Trisha Gee",
+    "description": "Head First Java is a complete learning experience in Java and object-oriented programming.",
+    "published": "6/21/22"
+  },
+  {
+    "title": "OCA Java SE 8",
+    "subtitle": "1Z0-808 Exam Study Guide",
+    "image": "https://m.media-amazon.com/images/I/41-uHh0PyKL._SX348_BO1,204,203,200_.jpg",
+    "author": "Edward Finegan, Robert Liguori, Aldir José Coelho Corrêa da Silva, Daniel Antonio Callegari",
+    "description": "Official Guide to the Oracle Certified Associate Java SE 8 Programmer I Entrance Exam.",
+    "published": "06/11/18"
+  },
+  {
+    "title": "Java®",
+    "subtitle": "How to program",
+    "image": "https://m.media-amazon.com/images/I/51esGT9hveL._SX371_BO1,204,203,200_.jpg",
+    "author": "Paul Deitel, Harvey Deitel",
+    "description": "Java: How to Program, 10th Edition, provides a clear, simple, engaging, and fun introduction to Java programming with an early emphasis on objects.",
+    "published": "3/3/23"
+  },
+  {
+    "title": "Clean Code",
+    "subtitle": "A Handbook of Agile Software Craftsmanship",
+    "image": "https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg",
+    "author": "Robert C. Martin",
+    "description": "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees.",
+    "published": "8/1/08"
+  },
+  {
+    "title": "The Phoenix Project",
+    "subtitle": "A Novel about IT, DevOps, and Helping Your Business Win",
+    "image": "https://m.media-amazon.com/images/I/51zDZ1s4hCL.jpg",
+    "author": "Gene Kim, Kevin Behr, George Spafford",
+    "description": "Every person involved in a failed IT project should be forced to read this book.",
+    "published": "2/6/18"
+  }
+]

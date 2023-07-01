@@ -1,0 +1,66 @@
+<section class="action-button-container">
+  <mat-toolbar>Book Listing</mat-toolbar>
+
+  <div class="action-button">
+    <button
+      mat-mini-fab
+      color="primary"
+      aria-label="button with a plus one icon"
+      (click)="onAdd()"
+    >
+      <mat-icon >plus_one</mat-icon>
+    </button>
+  </div>
+  <div class="action-button">
+    <button mat-mini-fab color="accent" aria-label="button with a refresh icon">
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </div>
+  <div class="action-button">
+    <button
+      mat-mini-fab
+      color="warn"
+      aria-label="icon button with a delete icon"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</section>
+<mat-divider></mat-divider>
+<div class="container">
+  <div class="row">
+    <div class="search-hero">
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="searchText"
+        placeholder="Type your search..."
+        (input)="filterBooks()"
+      />
+    </div>
+  </div>
+</div>
+<mat-divider></mat-divider>
+<mat-list>
+  <ng-container *ngIf="books$ | async as books; else loadingSpinner">
+    <mat-card *ngFor="let book of filteredBooks" class="book-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ book.title }}</mat-card-title>
+          <img mat-card-sm-image [src]="book.image" alt="book cover" />
+          <mat-card-subtitle>{{ book.subtitle }}</mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>{{ book.author }}</p>
+        <p>{{ book.description }}</p>
+        <p>{{ book.published | date: "shortDate" }}</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</mat-list>
+
+<ng-template #loadingSpinner>
+  <mat-spinner></mat-spinner>
+</ng-template>
