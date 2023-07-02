@@ -1,22 +1,28 @@
+
 mat-card{
-  max-width: 80%;
-  margin: 2em auto;
-  text-align: center;
-  background: whitesmoke;
+  margin: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
+mat-toolbar{
+
+  padding: 10px;
+}
+
 
 input{
-  width: 30%;
-  border: solid ;
-  border-radius: 10px;
+  border-bottom: solid black 1px;
+
 }
 
-.full-width{
-  width: 100%;
-}
-
-
-.min-width {
-  width: 100%;
+.form {
   min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-element {
+  padding: 5px;
+  width: 100%;
 }
