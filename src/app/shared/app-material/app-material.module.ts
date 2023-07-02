@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SharedModule } from '../shared.model';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   exports: [
@@ -26,7 +27,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     MatProgressSpinnerModule,
     SharedModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDatepickerModule
   ],
 })
 export class AppMaterialModule {}
