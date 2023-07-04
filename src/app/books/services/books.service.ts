@@ -8,7 +8,7 @@ import { first, tap } from 'rxjs';
 })
 export class BooksService {
 
-  private readonly API = '/assets/books.json';
+  private readonly API = 'http://localhost:8080/books';
 
   constructor( private httpClient: HttpClient) {}
 
