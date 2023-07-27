@@ -28,7 +28,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatProgressSpinnerModule,
     SharedModule,
     MatSnackBarModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatIconModule
   ],
 })
 export class AppMaterialModule {}
