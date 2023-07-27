@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot } from '@angular/router';
 import { Book } from '../model/book';
 import { Observable, of } from 'rxjs';
 import { BooksService } from '../services/books.service';
@@ -11,7 +11,7 @@ export class BookResolver {
 
   constructor(private service: BooksService) {}
 
-  resolve = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Book> => {
+  resolve = (route: ActivatedRouteSnapshot): Observable<Book> => {
     if (route.params && route.params['id']) {
       return this.service.loadById(route.params['id']);
     }
