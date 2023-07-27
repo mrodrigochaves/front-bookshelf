@@ -27,7 +27,7 @@ export class BooksComponent implements OnInit {
     'description',
     'published',
   ];
-  searchText: string = '';
+  searchText = '';
 
   constructor(
     private booksService: BooksService,
@@ -36,7 +36,7 @@ export class BooksComponent implements OnInit {
     private route: ActivatedRoute
   ) {
     this.books$ = this.booksService.listBooks().pipe(
-      catchError((_error) => {
+      catchError(() => {
         this.onError('Error loading books!');
         return of([]);
       })
